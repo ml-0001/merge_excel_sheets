@@ -1,0 +1,14 @@
+[html]
+directory = $PWD/shippable/codecoverage
+
+[xml]
+output = $PWDshippable/codecoverage/coverage.xml
+
+[report]
+exclude_lines =
+    pragma: no cover
+
+omit =
+    */benchmarks/*
+    */tests/*
+    */test_*
