@@ -1,8 +1,9 @@
 # coding=UTF-8
 from __future__ import unicode_literals
 import sys,os
-reload(sys)
-sys.setdefaultencoding('gb2312')
+if sys.version_info < (3, 4):
+	reload(sys)
+	sys.setdefaultencoding('gb2312')
 import logging
 import openpyxl
 
